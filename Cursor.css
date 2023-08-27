@@ -1,0 +1,38 @@
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(207, 205, 205);
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate;
+}
+* {
+  background-color: darkblue;
+}
+.dot {
+  background-color: red;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: relative;
+  top: 35%;
+  left: 35%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
